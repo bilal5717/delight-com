@@ -1,0 +1,46 @@
+# Laravel-specific files
+/vendor/
+/node_modules/
+/public/storage
+/storage/*.key
+.env
+.env.backup
+.phpunit.result.cache
+
+# Ignoring Composer files
+composer.lock
+
+# Laravel Dusk
+/.vscode/
+
+# Ignore any custom files in storage
+storage/app/public/*
+!storage/app/public/.gitignore
+
+# Ignore cached data
+bootstrap/cache/*.php
+storage/*.log
+storage/**/*.log
+
+# Ignore compiled view files
+storage/framework/views/*.php
+
+# Ignore the IDE files
+.idea/
+/.vscode/
+
+# Ignore phpstorm generated files
+.idea/*
+.idea/.name
+*.iml
+
+# Ignore log files and databases in the root
+*.log
+*.sql
+*.sqlite
+
+# Ignore anything related to deployment
+Homestead.yaml
+Homestead.json
+/vagrant/
+.DS_Store/
