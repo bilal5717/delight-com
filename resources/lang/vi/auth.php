@@ -1,0 +1,27 @@
+<?php 
+
+return [
+    'failed' => 'Những thông tin xác thực này không khớp với hồ sơ của chúng tôi.',
+    'throttle' => 'Quá nhiều lần đăng nhập. Vui lòng thử lại sau :seconds giây.',
+    'login' => 'Đăng nhập',
+    'register' => 'Đăng ký',
+    'account_info' => 'Thông tin tài khoản',
+    'change_info' => 'Thay đổi thông tin',
+    'change_password' => 'Thay đổi mật mã',
+    'logout' => 'Đăng xuất',
+    'remember_me' => 'Nhớ thông tin của tôi',
+    'information_updated' => 'Thông tin của bạn đã được cập nhật',
+    'name' => 'Tên',
+    'email' => 'Email',
+    'password' => 'Mật mã',
+    'confirm_password' => 'Xác nhận mật mã',
+    'old_password' => 'Mật mã cũ',
+    'new_password' => 'Mật mã mới',
+    'cancel' => 'Hủy',
+    'reset_password' => 'Đặt lại mật khẩu',
+    'send_password_reset_link' => 'Gửi liên kết đặt lại mật khẩu',
+    'forgot_password_question' => 'Quên mật khẩu?',
+    'wrong_password' => 'Mật khẩu cũ bạn điền không đúng.',
+    'password_updated' => 'Mật khẩu của bạn đã được thay đổi.',
+    'registration_closed' => 'Đóng đăng ký.',
+];

@@ -1,0 +1,20 @@
+User-agent: *
+Disallow:
+
+Allow: /
+
+User-agent: *
+Disallow: /adminntulocal/
+Disallow: /ajax/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+Disallow: /vendor/
+Disallow: /main.php
+Disallow: /mix-manifest.json
+
+
+Sitemap: http://127.0.0.1:8001/lv/sitemaps.xml
+Sitemap: http://127.0.0.1:8001/pk/sitemaps.xml
+Sitemap: http://127.0.0.1:8001/gb/sitemaps.xml
+Sitemap: http://127.0.0.1:8001/us/sitemaps.xml

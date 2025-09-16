@@ -1,0 +1,46 @@
+<?php
+
+return [
+    'Reviews' => 'Recensioner',
+    'Review' => 'Recension',
+    'Reviews system' => 'Recensionssystem',
+    'Ratings' => 'Betyg',
+    'Rating' => 'Betyg',
+    'count_reviews' => '{0} Recensioner|{1} Recension|[2,*] Recensioner',
+    'count_stars' => '{0} Stjärna|{1} Stjärna|[2,*] Stjärnor',
+    'count_ratings' => '{0} Betyg|{1} Betyg|[2,*] Betyg',
+    'There were errors while submitting this review' => 'Det uppstod fel när du skickade denna recension',
+    'Your review has been posted!' => 'Din recension har publicerats!',
+    'Your review has been removed!' => 'Din recension har tagits bort!',
+    'Enter your review here...' => 'Skriv din recension här ...',
+    'Leave a Review' => 'Lämna en recension',
+    'Anonymous' => 'Anonym',
+    'Delete' => 'Ta bort',
+    'Ad' => 'Annons',
+    'Comments' => 'Kommentarer',
+    'Comment' => 'Kommentar',
+    'Approved' => 'Godkänd',
+    'Spam' => 'Skräppost',
+    'User' => 'Användare',
+    'Note' => 'Notering',
+    'You must be logged in to post a review.' => 'Du måste vara inloggad för att skriva en recension.',
+    'validation' => [
+        'comment' => [
+            'required' => 'Kommentarsfältet är obligatoriskt.',
+            'min' => ':Attribute måste vara minst :min tecken.',
+            'max' => ':Attribute kan inte vara längre än :max tecken.',
+        ],
+        'rating' => [
+            'required' => 'Betyget (antal stjärnor) är obligatoriskt.',
+            'integer'  => ':Attribute måste vara ett heltal.',
+            'between' => ':Attribute måste vara mellan :min och :max.',
+        ],
+    ],
+    'guests_comments_label' => 'Tillåt gäster att skriva recensioner',
+    'guests_comments_hint' => 'Tillåt gäst-användare att skriva betyg och kommentarer',
+    'Manage' => 'Hantera',
+    'You cannot add reviews for your own ads.' => 'Du kan inte lägga till recensioner för dina egna annonser.',
+    'Your ad has no reviews yet.' => 'Din annons har ännu inga recensioner.',
+    'This ad has no reviews yet. Be the first to leave a review.' => 'Denna annons har ännu inga recensioner. Var den första att lämna en recension.',
+
+];

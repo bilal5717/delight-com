@@ -1,0 +1,27 @@
+<?php 
+
+return [
+    'failed' => '이러한 자격 증명은 당사의 기록과 일치하지 않습니다.',
+    'throttle' => '로그인 시도 횟수가 너무 많습니다. :seconds 초 후에 다시 시도하십시오.',
+    'login' => '로그인',
+    'register' => '지금 등록하세요',
+    'account_info' => '계정 정보',
+    'change_info' => '정보 변경',
+    'change_password' => '비밀번호 변경',
+    'logout' => '로그 아웃',
+    'remember_me' => '날 기억해',
+    'information_updated' => '귀하의 정보가 업데이트되었습니다.',
+    'name' => '이름',
+    'email' => '이메일',
+    'password' => '비밀번호',
+    'confirm_password' => '비밀번호 확인',
+    'old_password' => '기존 비밀번호',
+    'new_password' => '새 비밀번호',
+    'cancel' => '취소',
+    'reset_password' => '암호를 재설정',
+    'send_password_reset_link' => '비밀번호 재설정 링크 보내기',
+    'forgot_password_question' => '비밀번호를 잊어 버렸습니까?',
+    'wrong_password' => '입력한 이전 비밀번호가 잘못되었습니다.',
+    'password_updated' => '당신의 비밀번호가 변경되었습니다.',
+    'registration_closed' => '등록이 마감되었습니다.',
+];

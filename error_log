@@ -1,0 +1,2 @@
+[03-May-2023 13:24:21 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/azfactor/travel1.paythegas.com/app/Console/Commands/IndexingCron.php on line 144
+[03-May-2023 13:25:02 UTC] PHP Fatal error:  Cannot use try without catch or finally in /home/azfactor/travel1.paythegas.com/app/Console/Commands/IndexingCron.php on line 144

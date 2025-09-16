@@ -1,0 +1,27 @@
+<?php 
+
+return [
+    'failed' => 'یہ اسناد ہمارے ریکارڈ سے میل نہیں کھاتی ہیں۔',
+    'throttle' => 'لاگ ان کی بہت زیادہ کوششیں براہ کرم :second سیکنڈ میں دوبارہ کوشش کریں۔',
+    'login' => 'لاگ ان',
+    'register' => 'رجسٹر کریں',
+    'account_info' => 'اکاونٹ کی معلومات',
+    'change_info' => 'معلومات کو تبدیل کریں۔',
+    'change_password' => 'پاس ورڈ تبدیل کریں',
+    'logout' => 'لاگ آوٹ',
+    'remember_me' => 'مجھے یاد رکھنا',
+    'information_updated' => 'آپ کی معلومات کو اپ ڈیٹ کر دیا گیا ہے۔',
+    'name' => 'نام',
+    'email' => 'ای میل',
+    'password' => 'پاس ورڈ',
+    'confirm_password' => 'پاس ورڈ کی تصدیق کریں۔',
+    'old_password' => 'پرانا پاسورڈ',
+    'new_password' => 'نیا پاس ورڈ',
+    'cancel' => 'منسوخ کریں۔',
+    'reset_password' => 'پاس ورڈ ری سیٹ',
+    'send_password_reset_link' => 'پاس ورڈ ری سیٹ لنک بھیجیں۔',
+    'forgot_password_question' => 'اپنا پاس ورڈ بھول گئے؟',
+    'wrong_password' => 'آپ کا داخل کردہ پرانا پاس ورڈ غلط ہے۔',
+    'password_updated' => 'آپ کا پاس ورڈ تبدیل کر دیا گیا ہے۔',
+    'registration_closed' => 'رجسٹریشن بند ہے۔',
+];

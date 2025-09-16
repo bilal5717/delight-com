@@ -1,0 +1,46 @@
+<?php
+
+return [
+    'Reviews' => 'Відгуки',
+    'Review' => 'Відгук',
+    'Reviews system' => 'Система відгуків',
+    'Ratings' => 'Рейтинги',
+    'Rating' => 'Рейтинг',
+    'count_reviews' => '{0} відгук|{1} відгук|[2,*] відгуків',
+    'count_stars' => '{0} зірка|{1} зірка|[2,*] зірок',
+    'count_ratings' => '{0} рейтинг|{1} рейтинг|[2,*] рейтингів',
+    'There were errors while submitting this review' => 'При публікації відгуку сталася помилка',
+    'Your review has been posted!' => 'Ваш відгук був опублікований!',
+    'Your review has been removed!' => 'Ваш відгук був видалений!',
+    'Enter your review here...' => 'Введіть свій відгук тут...',
+    'Leave a Review' => 'Залишити відгук',
+    'Anonymous' => 'Анонімно',
+    'Delete' => 'Видалити',
+    'Ad' => 'Оголошення',
+    'Comments' => 'Коментарі',
+    'Comment' => 'Коментар',
+    'Approved' => 'Схвалено',
+    'Spam' => 'Спам',
+    'User' => 'Користувач',
+    'Note' => 'Примітка',
+
+    'You must be logged in to post a review.' => 'Ви повинні бути авторизовані, щоб залишити відгук.',
+    'validation' => [
+        'comment' => [
+            'required' => 'Поле коментара є обов язковим.',
+            'min' =>  'Поле :attribute повинно містити принаймні :min символів.',
+            'max' => 'Поле :attribute не може містити більше ніж :max символів.',
+        ],
+        'rating' => [
+            'required' => 'Оцінка (у зірках) є обов язковою.',
+            'integer'  => 'Поле :attribute повинно бути цілим числом.',
+            'between' =>  'Поле :attribute повинно бути між :min та :max.',
+        ],
+    ],
+    'guests_comments_label' => 'Дозволити гостям залишати відгуки',
+    'guests_comments_hint' => 'Дозволити незареєстрованим користувачам залишати оцінки та коментарі',
+    'Manage' => 'Керувати',
+    'You cannot add reviews for your own ads.' => 'Ви не можете додавати відгуки до своїх оголошень.',
+    'Your ad has no reviews yet.' => 'Ваше оголошення ще не має відгуків.',
+    'This ad has no reviews yet. Be the first to leave a review.' => 'У цьому оголошенні ще немає відгуків. Будьте першим, хто залишить відгук.',
+];

@@ -1,0 +1,46 @@
+<?php
+
+return [
+    'Reviews' => 'Anmeldelser',
+    'Review' => 'Anmeldelse',
+    'Reviews system' => 'Anmeldelsessystem',
+    'Ratings' => 'Bedømmelser',
+    'Rating' => 'Bedømmelse',
+    'count_reviews' => '{0} anmeldelse|{1} anmeldelse|[2,*] anmeldelser',
+    'count_stars' => '{0} stjerne|{1} stjerne|[2,*] stjerner',
+    'count_ratings' => '{0} bedømmelse|{1} bedømmelse|[2,*] bedømmelser',
+    'There were errors while submitting this review' => 'Der opstod fejl under indsendelse af denne anmeldelse',
+    'Your review has been posted!' => 'Din anmeldelse er blevet indsendt!',
+    'Your review has been removed!' => 'Din anmeldelse er blevet fjernet!',
+    'Enter your review here...' => 'Indtast din anmeldelse her ...',
+    'Leave a Review' => 'Skriv en anmeldelse',
+    'Anonymous' => 'Anonym',
+    'Delete' => 'Slet',
+    'Ad' => 'Annonce',
+    'Comments' => 'Kommentarer',
+    'Comment' => 'Kommentar',
+    'Approved' => 'Godkendt',
+    'Spam' => 'Spam',
+    'User' => 'Bruger',
+    'Note' => 'Bemærkning',
+    'You must be logged in to post a review.' => 'Du skal være logget ind for at skrive en anmeldelse.',
+    'validation' => [
+        'comment' => [
+            'required' => 'Kommentarfeltet skal udfyldes.',
+            'min' => ':attribute skal være mindst :min tegn.',
+            'max' => ':attribute må ikke være større end :max tegn.',
+        ],
+        'rating' => [
+            'required' => 'Bedømmelse (i stjerner) er påkrævet.',
+            'integer'  => ':attribute skal være et helt tal.',
+            'between' => ':attribute skal være mellem :min og :max.',
+        ],
+    ],
+    'guests_comments_label' => 'Tillad gæster at skrive anmeldelser',
+    'guests_comments_hint' => 'Tillad gæstebrugere at skrive bedømmelser og kommentarer',
+    'Manage' => 'Administrer',
+    'You cannot add reviews for your own ads.' => 'Du kan ikke skrive anmeldelser for dine egne annoncer.',
+    'Your ad has no reviews yet.' => 'Din annonce har endnu ingen anmeldelser.',
+    'This ad has no reviews yet. Be the first to leave a review.' => 'Denne annonce har endnu ingen anmeldelser. Vær den første til at skrive en anmeldelse.',
+
+];

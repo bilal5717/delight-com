@@ -1,0 +1,27 @@
+<?php 
+
+return [
+    'failed' => 'ये साख हमारे रिकॉर्ड से मेल नहीं खाती ।',
+    'throttle' => 'बहुत सारे लॉगिन प्रयास। कृपया :seconds सेकंड में  फिर से प्रयास करें।',
+    'login' => 'लॉगिन',
+    'register' => 'पंजीकृत करें',
+    'account_info' => 'खाते की जानकारी',
+    'change_info' => 'जानकारी बदलें',
+    'change_password' => 'पासवर्ड बदलें',
+    'logout' => 'लॉगआउट',
+    'remember_me' => 'मुझे याद रखें',
+    'information_updated' => 'आपकी जानकारी अपडेट कर दी गई है।',
+    'name' => 'नाम',
+    'email' => 'ईमेल',
+    'password' => 'पासवर्ड',
+    'confirm_password' => 'पासवर्ड की पुष्टि करें',
+    'old_password' => 'पुराना पासवर्ड',
+    'new_password' => 'नया पासवर्ड',
+    'cancel' => 'रद्द करना',
+    'reset_password' => 'रीसेट पासवर्ड',
+    'send_password_reset_link' => 'पासवर्ड रीसेट लिंक भेजें',
+    'forgot_password_question' => 'अपना पासवर्ड भूल गए?',
+    'wrong_password' => 'आपके द्वारा दर्ज किया गया पुराना पासवर्ड गलत है।',
+    'password_updated' => 'आपका पासवर्ड बदल दिया गया है।',
+    'registration_closed' => 'पंजीकरण बंद है।',
+];

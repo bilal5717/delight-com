@@ -1,0 +1,27 @@
+<?php 
+
+return [
+    'failed' => 'need volikirjad ei ühti meie andmetega',
+    'throttle' => 'Liiga palju sisselogimiskatseid. Proovige uuesti :seconds sekundi pärast.',
+    'login' => 'Logi sisse',
+    'register' => 'Registreeri',
+    'account_info' => 'Konto andmed',
+    'change_info' => 'Muuda teavet',
+    'change_password' => 'Muuda salasõna',
+    'logout' => 'Logi välja',
+    'remember_me' => 'Mäleta mind',
+    'information_updated' => 'Teie teavet on värskendatud.',
+    'name' => 'Nimi',
+    'email' => 'Meil',
+    'password' => 'Salasõna',
+    'confirm_password' => 'Kinnita salasõna',
+    'old_password' => 'Vana parool',
+    'new_password' => 'Uus salasõna',
+    'cancel' => 'Tühista',
+    'reset_password' => 'Lähtestage parool',
+    'send_password_reset_link' => 'Saada parooli lähtestamise link',
+    'forgot_password_question' => 'Unustasid salasõna?',
+    'wrong_password' => 'Sisestatud vana parool on vale.',
+    'password_updated' => 'Teie parool on muudetud.',
+    'registration_closed' => 'Registreerimine on suletud.',
+];

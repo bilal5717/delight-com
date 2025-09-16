@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !^public
+    RewriteRule ^(.*)$ public/$1 [L]
+
+    RewriteCond %{HTTP_HOST} ^bh.newtouse.com [NC]
+    RewriteRule ^(.*)$ https://bh.newtouse.com/$1 [L,R=301,NC]
+</IfModule>

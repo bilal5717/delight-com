@@ -1,0 +1,27 @@
+<?php 
+
+return [
+    'failed' => 'Kitambulisho hiki hakilingani na rekodi zetu.',
+    'throttle' => 'Majaribio mengi sana ya kuingia.Tafadhali jaribu tena baada ya :seconds seconds.',
+    'login' => 'ingia',
+    'register' => 'Sajili',
+    'account_info' => 'Maelezo ya Akaunti',
+    'change_info' => 'Badilisha maelezo',
+    'change_password' => 'Badilisha nenosiri',
+    'logout' => 'Ondoka',
+    'remember_me' => 'Nikumbuke',
+    'information_updated' => 'Maelezo yako yamesasishwa.',
+    'name' => 'Jina',
+    'email' => 'Barua pepe',
+    'password' => 'Nenosiri',
+    'confirm_password' => 'Thibitisha Nenosiri',
+    'old_password' => 'Nenosiri la Zamani',
+    'new_password' => 'Nenosiri Jipya',
+    'cancel' => 'Ghairi',
+    'reset_password' => 'Weka upya Nenosiri',
+    'send_password_reset_link' => 'Tuma Kiungo cha Kuweka upya Nenosiri',
+    'forgot_password_question' => 'Je, umesahau nenosiri lako?',
+    'wrong_password' => 'Nenosiri la zamani uliloweka si sahihi.',
+    'password_updated' => 'Nenosiri lako limebadilishwa.',
+    'registration_closed' => 'Usajili umefungwa.',
+];

@@ -1,0 +1,27 @@
+<?php 
+
+return [
+    'failed' => 'Estas credenciales no coinciden con nuestros registros.',
+    'throttle' => 'Demasiados intentos de acceso. Por favor intente nuevamente en :seconds segundos.',
+    'login' => 'Login',
+    'register' => 'Register',
+    'account_info' => 'Informacion de cuenta',
+    'change_info' => 'Cambiar informacion',
+    'change_password' => 'Cambiar la contraseña',
+    'logout' => 'Logout',
+    'remember_me' => 'Recuérdame',
+    'information_updated' => 'Su información ha sido actualizada.',
+    'name' => 'Nombre',
+    'email' => 'Email',
+    'password' => 'Contraseña',
+    'confirm_password' => 'confirmar Contraseña',
+    'old_password' => 'Contraseña anterior',
+    'new_password' => 'Nueva contraseña',
+    'cancel' => 'Cancelar',
+    'reset_password' => 'Restablecer la contraseña',
+    'send_password_reset_link' => 'enviar enlace de restablecimiento de contraseña',
+    'forgot_password_question' => 'Olvidaste tu contraseña?',
+    'wrong_password' => 'La contraseña anterior que ingresó es incorrecta.',
+    'password_updated' => 'Tu contraseña ha sido cambiada.',
+    'registration_closed' => 'Las inscripciones están cerradas.',
+];

@@ -1,0 +1,111 @@
+@extends('admin::layouts.master')
+
+@section('header')
+    <div class="row page-titles">
+        <div class="col-md-5 col-12 align-self-center">
+            <h2 class="mb-0">
+                <span class="text-capitalize">{{ trans('admin.indexing info') }}</span>
+                <small>{{ trans('admin.check indexing status') }}</small>
+            </h2>
+        </div>
+        <div class="col-md-7 col-12 align-self-center d-none d-md-block">
+            <ol class="breadcrumb mb-0 p-0 bg-transparent float-right">
+                <li class="breadcrumb-item"><a href="{{ admin_url() }}">{{ trans('admin.dashboard') }}</a></li>
+                <li class="breadcrumb-item active">{{ trans('admin.indexing info') }}</li>
+            </ol>
+        </div>
+    </div>
+@endsection
+
+@section('content')
+<div class="flex-row d-flex justify-content-center">
+        <?php
+        $colMd = config('settings.style.admin_boxed_layout') == '1' ? ' col-md-12' : ' col-md-9';
+        ?>
+        <div class="col-sm-12{{ $colMd }}">
+        
+            
+            {!! Form::open(array('url' => route('indexing.status'), 'method' => 'post')) !!}
+            <div class="card border-top border-primary">
+                
+                <div class="card-header">
+                    <h3 class="mb-0">{{ trans('admin.check_google_indexing') }}</h3>
+                </div>
+                <div class="card-body">
+                @error('url')
+                <div class="col-md-12">
+                    <div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="alert-heading">Please fix the following errors:</h4>
+                        {{ $message }}
+                    </div>
+                </div>
+                @enderror
+                <div class="form-group col-md-12">
+                    <label>Enter Url</label>
+                    <i class="fas fa-flag-checkered pull-right" title="This field is translatable."></i>
+                    
+                            <input type="text" name="url" placeholder="https://" value="{{ (session('status')) ? session('status')->url : (session('failed') ? session('failed')['url'] : old('url')) }}" class="form-control">
+                            
+                    
+                    </div>
+                    
+                </div>
+                @if (session('status'))
+                @if (session('status')->latestUpdate)
+                <div class="col-md-12">
+                    <div class="alert alert-success ml-0 mr-0 mb-5">
+                        <ul>
+                            <li>Notify Time : <b>{{ session('status')->latestUpdate->notifyTime }}</li>
+                            <li>Url : <b>{{ session('status')->latestUpdate->url }}</li>
+                            <li>Type : <b>{{ session('status')->latestUpdate->type }}</li>
+                        </ul>
+                    </div>
+</div>
+@endif
+                @endif
+                @if (session('status'))
+                @if (session('status')->latestRemove)
+                <div class="col-md-12">
+                    <div class="alert alert-danger ml-0 mr-0 mb-5">
+                        <ul>
+                            <li>Notify Time : <b>{{ session('status')->latestRemove->notifyTime }}</li>
+                            <li>Url : <b>{{ session('status')->latestRemove->url }}</li>
+                            <li>Type : <b>{{ session('status')->latestRemove->type }}</li>
+                        </ul>
+                    </div>
+</div>
+@endif
+                @endif
+                @if (session('failed'))
+                <div class="col-md-12">
+                    <div class="alert alert-danger ml-0 mr-0 mb-5">
+                        <ul>
+                            <li>Code : <b>{{ session('failed')['error']['code'] }}</li>
+                            <li>Error Message : <b>{{ session('failed')['error']['message'] }}</li>
+                        </ul>
+                    </div>
+</div>
+                @endif
+                <div class="card-footer">
+                    <div id="saveActions" class="form-group">
+                        
+                        <div class="btn-group">
+                            
+                            <button type="submit" class="btn btn-primary shadow">
+                                <span class="fa fa-save" role="presentation" aria-hidden="true"></span> &nbsp;
+                                <span>{{ trans('admin.check_status') }}</span>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            {!! Form::close() !!}
+        </div>
+    </div>
+@endsection

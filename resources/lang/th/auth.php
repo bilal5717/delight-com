@@ -1,0 +1,27 @@
+<?php 
+
+return [
+    'failed' => 'ข้อมูลประจำตัวเหล่านี้ไม่ตรงกับบันทึกของเรา',
+    'throttle' => 'มีการพยายามเข้าสู่ระบบมากเกินไป โปรดลองอีกครั้งใน :seconds วินาที',
+    'login' => 'เข้าสู่ระบบ',
+    'register' => 'สมัครสมาชิก',
+    'account_info' => 'ข้อมูลบัญชี',
+    'change_info' => 'เปลี่ยนข้อมูล',
+    'change_password' => 'เปลี่ยนรหัสผ่าน',
+    'logout' => 'ออกจากระบบ',
+    'remember_me' => 'จดจำฉันไว้',
+    'information_updated' => 'ข้อมูลของคุณได้รับการปรับปรุง',
+    'name' => 'ชื่อ',
+    'email' => 'อีเมล',
+    'password' => 'รหัสผ่าน',
+    'confirm_password' => 'ยืนยันรหัสผ่าน',
+    'old_password' => 'รหัสผ่านเก่า',
+    'new_password' => 'รหัสผ่านใหม่',
+    'cancel' => 'ยกเลิก',
+    'reset_password' => 'รีเซ็ตรหัสผ่าน',
+    'send_password_reset_link' => 'ส่งลิงค์รีเซ็ตรหัสผ่าน',
+    'forgot_password_question' => 'ลืมรหัสผ่านหรือไม่?',
+    'wrong_password' => 'รหัสผ่านเก่าที่คุณป้อนไม่ถูกต้อง',
+    'password_updated' => 'รหัสผ่านของคุณมีการเปลี่ยนแปลง',
+    'registration_closed' => 'ปิดการลงทะเบียน',
+];

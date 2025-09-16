@@ -1,0 +1,72 @@
+[19-Apr-2023 11:15:11 UTC] PHP Fatal error:  Trait 'App\Models\Post\SimilarByVendor' not found in /home/azfactor/travel1.paythegas.com/app/Models/Post.php on line 40
+[19-Apr-2023 11:15:11 UTC] PHP Fatal error:  Uncaught Symfony\Component\HttpKernel\Exception\HttpException: Trait 'App\Models\Post\SimilarByVendor' not found<br />
+In the: "/app/Models/Post.php" file at line: 40 in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:1132
+Stack trace:
+#0 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(44): Illuminate\Foundation\Application->abort(500, 'Trait 'App\\Mode...', Array)
+#1 /home/azfactor/travel1.paythegas.com/app/Exceptions/Handler.php(321): abort(500, 'Trait 'App\\Mode...')
+#2 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): App\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#3 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(173): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResp in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 1132
+[19-Apr-2023 11:15:16 UTC] PHP Fatal error:  Trait 'App\Models\Post\SimilarByVendor' not found in /home/azfactor/travel1.paythegas.com/app/Models/Post.php on line 40
+[19-Apr-2023 11:15:16 UTC] PHP Fatal error:  Uncaught Symfony\Component\HttpKernel\Exception\HttpException: Trait 'App\Models\Post\SimilarByVendor' not found<br />
+In the: "/app/Models/Post.php" file at line: 40 in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:1132
+Stack trace:
+#0 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(44): Illuminate\Foundation\Application->abort(500, 'Trait 'App\\Mode...', Array)
+#1 /home/azfactor/travel1.paythegas.com/app/Exceptions/Handler.php(321): abort(500, 'Trait 'App\\Mode...')
+#2 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): App\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#3 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(173): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResp in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 1132
+[19-Apr-2023 11:16:15 UTC] PHP Fatal error:  Trait 'App\Models\Post\SimilarByVendor' not found in /home/azfactor/travel1.paythegas.com/app/Models/Post.php on line 40
+[19-Apr-2023 11:16:15 UTC] PHP Fatal error:  Uncaught Symfony\Component\HttpKernel\Exception\HttpException: Trait 'App\Models\Post\SimilarByVendor' not found<br />
+In the: "/app/Models/Post.php" file at line: 40 in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:1132
+Stack trace:
+#0 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(44): Illuminate\Foundation\Application->abort(500, 'Trait 'App\\Mode...', Array)
+#1 /home/azfactor/travel1.paythegas.com/app/Exceptions/Handler.php(321): abort(500, 'Trait 'App\\Mode...')
+#2 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): App\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#3 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(173): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResp in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 1132
+[19-Apr-2023 11:16:19 UTC] PHP Fatal error:  Trait 'App\Models\Post\SimilarByVendor' not found in /home/azfactor/travel1.paythegas.com/app/Models/Post.php on line 40
+[19-Apr-2023 11:16:19 UTC] PHP Fatal error:  Uncaught Symfony\Component\HttpKernel\Exception\HttpException: Trait 'App\Models\Post\SimilarByVendor' not found<br />
+In the: "/app/Models/Post.php" file at line: 40 in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:1132
+Stack trace:
+#0 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(44): Illuminate\Foundation\Application->abort(500, 'Trait 'App\\Mode...', Array)
+#1 /home/azfactor/travel1.paythegas.com/app/Exceptions/Handler.php(321): abort(500, 'Trait 'App\\Mode...')
+#2 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): App\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#3 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(173): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResp in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 1132
+[19-Apr-2023 11:22:20 UTC] PHP Fatal error:  Trait 'App\Models\Post\SimilarByVendor' not found in /home/azfactor/travel1.paythegas.com/app/Models/Post.php on line 40
+[19-Apr-2023 11:22:20 UTC] PHP Fatal error:  Uncaught Symfony\Component\HttpKernel\Exception\HttpException: Trait 'App\Models\Post\SimilarByVendor' not found<br />
+In the: "/app/Models/Post.php" file at line: 40 in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:1132
+Stack trace:
+#0 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(44): Illuminate\Foundation\Application->abort(500, 'Trait 'App\\Mode...', Array)
+#1 /home/azfactor/travel1.paythegas.com/app/Exceptions/Handler.php(321): abort(500, 'Trait 'App\\Mode...')
+#2 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(196): App\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#3 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(173): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResp in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 1132
+[21-Apr-2023 06:54:39 Europe/London] PHP Warning:  unlink(/home/azfactor/travel1.paythegas.com/bootstrap/cache/services.php): No such file or directory in /home/azfactor/travel1.paythegas.com/public/index.php on line 66
+[21-Apr-2023 07:52:39 Europe/London] PHP Warning:  unlink(/home/azfactor/travel1.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/azfactor/travel1.paythegas.com/public/index.php on line 66
+[21-Apr-2023 08:25:39 Europe/London] PHP Warning:  unlink(/home/azfactor/travel1.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/azfactor/travel1.paythegas.com/public/index.php on line 66
+[21-Apr-2023 10:00:39 Europe/London] PHP Warning:  unlink(/home/azfactor/travel1.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/azfactor/travel1.paythegas.com/public/index.php on line 66
+[22-Apr-2023 13:40:45 Europe/London] PHP Warning:  unlink(/home/azfactor/travel1.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/azfactor/travel1.paythegas.com/public/index.php on line 66
+[23-Apr-2023 14:09:51 Europe/London] PHP Warning:  unlink(/home/azfactor/travel1.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/azfactor/travel1.paythegas.com/public/index.php on line 66
+[23-Apr-2023 14:14:51 Europe/London] PHP Warning:  unlink(/home/azfactor/travel1.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/azfactor/travel1.paythegas.com/public/index.php on line 66
+[25-Apr-2023 12:55:54 Europe/London] PHP Warning:  unlink(/home/azfactor/travel1.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/azfactor/travel1.paythegas.com/public/index.php on line 66
+[26-Apr-2023 00:50:06 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('view')
+#1 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('view')
+#2 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('view', Array)
+#5 /home/azfactor/travel1.paythegas.c in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[26-Apr-2023 00:50:06 UTC] PHP Fatal error:  Uncaught ReflectionException: Class view does not exist in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('view')
+#1 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('view')
+#2 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('view', Array, true)
+#3 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('view', Array)
+#4 /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('view', Array)
+#5 /home/azfactor/travel1.paythegas.c in /home/azfactor/travel1.paythegas.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[13-Jul-2023 10:21:27 Europe/London] PHP Warning:  unlink(/home/azfactor/travel1.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/azfactor/travel1.paythegas.com/public/index.php on line 66
+[13-Jul-2023 19:58:12 Europe/London] PHP Warning:  unlink(/home/azfactor/travel1.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/azfactor/travel1.paythegas.com/public/index.php on line 66
+[13-Jul-2023 19:31:31 UTC] PHP Warning:  unlink(/home/aztrave2/travel5.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/aztrave2/travel5.paythegas.com/public/index.php on line 66
+[15-Jul-2023 12:36:21 UTC] PHP Warning:  unlink(/home/aztrave2/travel5.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/aztrave2/travel5.paythegas.com/public/index.php on line 66
+[15-Jul-2023 12:46:59 UTC] PHP Warning:  unlink(/home/aztrave2/travel5.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/aztrave2/travel5.paythegas.com/public/index.php on line 66
+[03-Aug-2023 10:07:25 UTC] PHP Warning:  unlink(/home/aztrave2/travel5.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/aztrave2/travel5.paythegas.com/public/index.php on line 66
+[03-Aug-2023 10:07:25 UTC] PHP Warning:  unlink(/home/aztrave2/travel5.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/aztrave2/travel5.paythegas.com/public/index.php on line 66
+[18-Aug-2023 10:16:27 UTC] PHP Warning:  unlink(/home/aztrave2/travel5.paythegas.com/bootstrap/cache/packages.php): No such file or directory in /home/aztrave2/travel5.paythegas.com/public/index.php on line 66

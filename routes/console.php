@@ -1,0 +1,43 @@
+<?php
+
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Foundation\Inspiring;
+
+/*
+|--------------------------------------------------------------------------
+| Console Routes
+|--------------------------------------------------------------------------
+|
+| This file is where you may define all of your Closure based console
+| commands. Each Closure is bound to a command instance allowing a
+| simple approach to interacting with each command's IO methods.
+|
+*/
+
+Artisan::command('inspire', function () {
+    $this->comment(Inspiring::quote());
+})->describe('Display an inspiring quote');
+
+
+Artisan::command('ads:clear', function () {
+    $this->info('Archive and remove old ads');
+})->describe('Archive and remove old ads');
+
+
+Artisan::command('makeBackup:exec {type?}', function () {
+	$this->info('Make backup of the website');
+})->describe('Make backup of the website');
+
+
+Artisan::command('clearBackup:exec', function () {
+	$this->info('Clear backups of the website');
+})->describe('Clear backups of the website');
+
+Artisan::command('indexing:cron', function () {
+	$this->info('Add urls to google and bing indexing');
+})->describe('Add urls to google and bing indexing');
+
+
+Artisan::command('swoole:autostart', function () {
+    $this->info('Swoole server started');
+})->describe('Start the Swoole server automatically');

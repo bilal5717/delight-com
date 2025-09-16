@@ -1,0 +1,46 @@
+<?php
+
+return [
+    'Reviews' => 'Vélemények',
+    'Review' => 'Vélemény',
+    'Reviews system' => 'Vélemények rendszere',
+    'Ratings' => 'Értékelések',
+    'Rating' => 'Értékelés',
+    'count_reviews' => '{0} vélemény|{1} vélemény|[2,*] vélemények',
+    'count_stars' => '{0} csillag|{1} csillag|[2,*] csillagok',
+    'count_ratings' => '{0} értékelés|{1} értékelés|[2,*] értékelések',
+    'There were errors while submitting this review' => 'Hiba történt a vélemény beküldésekor',
+    'Your review has been posted!' => 'Az ön véleményét közzétettük!',
+    'Your review has been removed!' => 'Az ön véleményét eltávolítottuk!',
+    'Enter your review here...' => 'Írja be a véleményét itt ...',
+    'Leave a Review' => 'Vélemény írása',
+    'Anonymous' => 'Névtelen',
+    'Delete' => 'Törlés',
+    'Ad' => 'Hirdetés',
+    'Comments' => 'Megjegyzések',
+    'Comment' => 'Megjegyzés',
+    'Approved' => 'Jóváhagyva',
+    'Spam' => 'Levélszemét',
+    'User' => 'Felhasználó',
+    'Note' => 'Megjegyzés',
+    'You must be logged in to post a review.' => 'Az értékelés írásához be kell jelentkezni.',
+    'validation' => [
+        'comment' => [
+            'required' => 'A komment mező kitöltése kötelező.',
+            'min' => 'A(z) :attribute legalább :min karakter hosszú kell legyen.',
+            'max' => 'A(z) :attribute nem lehet hosszabb, mint :max karakter.',
+        ],
+        'rating' => [
+            'required' => 'Az értékeléshez csillagokkal történő értékelés szükséges.',
+            'integer'  => 'A(z) :attribute csak egész szám lehet.',
+            'between' => 'A(z) :attribute :min és :max közötti érték lehet.',
+        ],
+    ],
+    'guests_comments_label' => 'Vendégeknek engedélyezze az értékelések közzétételét',
+    'guests_comments_hint' => 'Engedélyezze a vendég felhasználóknak az értékelések és kommentek közzétételét',
+    'Manage' => 'Kezelése',
+    'You cannot add reviews for your own ads.' => 'Saját hirdetésre nem írható értékelés.',
+    'Your ad has no reviews yet.' => 'Az Ön hirdetéséhez még nem érkezett értékelés.',
+    'This ad has no reviews yet. Be the first to leave a review.' => 'Ehhez a hirdetéshez még nem érkezett értékelés. Legyen az első, aki értékeli!',
+
+];

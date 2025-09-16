@@ -1,0 +1,45 @@
+/* Material Icons local font setup */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/MaterialIcons-Regular.woff2') format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Default size */
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-flex;  /* Changed from inline-block */
+  align-items: center;   /* Vertical alignment */
+  justify-content: center;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  /* Add these for better rendering */
+  font-feature-settings: 'liga';
+  text-rendering: optimizeLegibility;
+}
+
+/* Specific styles for booking icons */
+.material-icons.booking-icon {
+  width: 24px;     /* Fixed width */
+  height: 24px;    /* Fixed height */
+  flex-shrink: 0;  /* Prevent shrinking */
+}
+
+/* Container styles */
+.icon-text-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  vertical-align: middle;
+}
+
+

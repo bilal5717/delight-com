@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /company/
+Disallow: /admin/
+Disallow: /ajax/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+Disallow: /vendor/
+Disallow: /main.php
+Disallow: /index.php
+Disallow: /mix-manifest.json
+Disallow: /account/
+
+User-agent: *
+Disallow: /
+
+
+
