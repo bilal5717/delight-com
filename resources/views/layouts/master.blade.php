@@ -278,7 +278,9 @@ $publicDisk = \Storage::disk(config('filesystems.default'));
 </head>
 <body class="{{ config('app.skin') }}">
 <div id="wrapper">
-
+@section('top-header')
+		@includeFirst([config('larapen.core.customizedViewPath') . 'layouts.inc.topbar', 'layouts.inc.topbar'])
+	@show
 	@section('header')
 		@includeFirst([config('larapen.core.customizedViewPath') . 'layouts.inc.header', 'layouts.inc.header'])
 	@show
