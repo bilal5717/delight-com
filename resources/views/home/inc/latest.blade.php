@@ -2,13 +2,6 @@
 if (!isset($cacheExpiration)) {
     $cacheExpiration = (int)config('settings.optimization.cache_expiration');
 }
-if (config('settings.listing.display_mode') == '.compact-view') {
-	$colDescBox = 'col-sm-9 col-12';
-	$colPriceBox = 'col-sm-3 col-12';
-} else {
-	$colDescBox = 'col-sm-7 col-12';
-	$colPriceBox = 'col-sm-3 col-12';
-}
 $hideOnMobile = '';
 if (isset($latestOptions, $latestOptions['hide_on_mobile']) and $latestOptions['hide_on_mobile'] == '1') {
 	$hideOnMobile = ' hidden-sm';
@@ -16,7 +9,7 @@ if (isset($latestOptions, $latestOptions['hide_on_mobile']) and $latestOptions['
 ?>
 @if (isset($latest) && !empty($latest) && $latest->posts->count() > 0)
 	@includeFirst([config('larapen.core.customizedViewPath') . 'home.inc.spacer', 'home.inc.spacer'], ['hideOnMobile' => $hideOnMobile])
-	<div class="container{{ $hideOnMobile }}">
+	<div class="container{{ $hideOnMobile }}" style="overflow-x: hidden;">
 		<div class="col-xl-12 content-box layout-section">
 			<div class="row row-featured row-featured-category">
 				
@@ -24,141 +17,132 @@ if (isset($latestOptions, $latestOptions['hide_on_mobile']) and $latestOptions['
 					<div class="inner">
 						<h2>
 							<span class="title-3">{!! $latest->title !!}</span>
-							<a href="{{ $latest->link }}" class="sell-your-item">
+							<a href="{{ $latest->link }}" class="sell-your-item" style="transition: color 0.3s;" onmouseover="this.style.color='green';" onmouseout="this.style.color='';">
 								{{ t('View more') }} <i class="icon-th-list"></i>
 							</a>
 						</h2>
 					</div>
 				</div>
 				
-				<div id="postsList" class="adds-wrapper noSideBar category-list">
-					@foreach($latest->posts as $key => $post)
-						@continue(empty($post->city))
-						<?php
-							// Main Picture
-							if ($post->pictures->count() > 0) {
-								$postImg = imgUrl($post->pictures->get(0)->filename, 'medium');
-							} else {
-								$postImg = imgUrl(config('larapen.core.picture.default'), 'medium');
-							}
-						?>
-						<div class="item-list">
-							@if ($post->featured == 1)
-								@if (isset($post->latestPayment, $post->latestPayment->package) && !empty($post->latestPayment->package))
-									@if ($post->latestPayment->package->ribbon != '')
-										<div class="cornerRibbons {{ $post->latestPayment->package->ribbon }}">
-											<a href="#"> {{ $post->latestPayment->package->short_name }}</a>
-										</div>
+				<div id="postsList" class="adds-wrapper noSideBar" style="overflow-x: hidden;">
+					<div class="row" style="display: flex; flex-wrap: wrap;">
+						@foreach($latest->posts as $key => $post)
+							@continue(empty($post->city))
+							<?php
+								// Main Picture
+								if ($post->pictures->count() > 0) {
+									$postImg = imgUrl($post->pictures->get(0)->filename, 'medium');
+								} else {
+									$postImg = imgUrl(config('larapen.core.picture.default'), 'medium');
+								}
+							?>
+							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+								<div class="card h-100 position-relative border-0 shadow-sm" style="overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='scale(1.0)'; this.style.boxShadow='';">
+									@if ($post->featured == 1)
+										@if (isset($post->latestPayment, $post->latestPayment->package) && !empty($post->latestPayment->package))
+											@if ($post->latestPayment->package->ribbon != '')
+												<div class="position-absolute top-0 start-0 m-2 {{ $post->latestPayment->package->ribbon }}" style="z-index: 5; background-color: black; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#006400';" onmouseout="this.style.backgroundColor='black';">
+													<span class="badge" style="color: white;">{{ $post->latestPayment->package->short_name }}</span>
+												</div>
+											@endif
+										@endif
 									@endif
-								@endif
-							@endif
-							
-							<div class="row">
-								<div class="col-sm-2 col-12 no-padding photobox">
-									<div class="add-image">
-										
-										<a href="{{ \App\Helpers\UrlGen::post($post) }}">
-											<img class="lazyload img-thumbnail no-margin" src="{{ $postImg }}" alt="{{ $post->title }}">
-										</a>
-									</div>
-								</div>
-								
-								<div class="{{ $colDescBox }} add-desc-box">
-									<div class="items-details">
-										<h5 class="add-title">
-											<a href="{{ \App\Helpers\UrlGen::post($post) }}">{{ \Illuminate\Support\Str::limit($post->title, 70) }}</a>
-										</h5>
-										
-										<span class="info-row">
+									
+									<div class="position-relative">
+										<div class="position-absolute top-0 end-0 m-2" style="z-index: 10; display: flex; flex-direction: row; gap: 5px; align-items: center;">
 											@if (config('settings.single.show_post_types'))
 												@if (isset($post->postType) && !empty($post->postType))
-													<span class="add-type business-ads tooltipHere"
-														  data-toggle="tooltip"
-														  data-placement="bottom"
-														  title="{{ $post->postType->name }}"
-													>
+													<span class="badge bg-primary" style="font-size: 0.75rem; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;" data-toggle="tooltip" data-placement="bottom" title="{{ $post->postType->name }}">
 														{{ strtoupper(mb_substr($post->postType->name, 0, 1)) }}
-													</span>&nbsp;
+													</span>
 												@endif
 											@endif
-											@if (!config('settings.listing.hide_dates'))
-												<span class="date">
-													<i class="icon-clock"></i> {!! $post->created_at_formatted !!}
-												</span>
+											@if (isset($post->savedByLoggedUser) && $post->savedByLoggedUser->count() > 0)
+												<a class="btn btn-success btn-sm make-favorite p-1" id="{{ $post->id }}" style="width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;">
+													<i class="fa fa-heart fa-xs"></i>
+												</a>
+											@else
+												<a class="btn btn-light btn-sm make-favorite p-1" id="{{ $post->id }}" style="width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;">
+													<i class="fa fa-heart fa-xs"></i>
+												</a>
 											@endif
-											<span class="category"{!! (config('lang.direction')=='rtl') ? ' dir="rtl"' : '' !!}>
-												<i class="icon-folder-circled"></i>&nbsp;
-												@if (isset($post->category->parent) && !empty($post->category->parent))
-													<a href="{!! \App\Helpers\UrlGen::category($post->category->parent) !!}" class="info-link">
-														{{ $post->category->parent->name }}
-													</a>&nbsp;&raquo;&nbsp;
-												@endif
-												<a href="{!! \App\Helpers\UrlGen::category($post->category) !!}" class="info-link">
-													{{ $post->category->name }}
-												</a>
-											</span>
-											<span class="item-location"{!! (config('lang.direction')=='rtl') ? ' dir="rtl"' : '' !!}>
-												<i class="icon-location-2"></i>&nbsp;
-												<a href="{!! \App\Helpers\UrlGen::city($post->city) !!}" class="info-link">
-													{{ $post->city->name }}
-												</a>
-												{{ (isset($post->distance)) ? '- ' . round($post->distance, 2) . getDistanceUnit() : '' }}
-											</span>
-										</span>
+										</div>
+										<a href="{{ \App\Helpers\UrlGen::post($post) }}">
+											<img class="card-img-top w-100" src="{{ $postImg }}" alt="{{ $post->title }}" style="height: 200px; object-fit: cover;">
+										</a>
 									</div>
 									
-									@if (config('plugins.reviews.installed'))
-										@if (view()->exists('reviews::ratings-list'))
-											@include('reviews::ratings-list')
-										@endif
-									@endif
-								
-								</div>
-								
-								<div class="{{ $colPriceBox }} text-right price-box" style="white-space: nowrap;">
-									<h4 class="item-price">
-										@if (isset($post->category, $post->category->type))
-											@if (!in_array($post->category->type, ['not-salable']))
-												@if (is_numeric($post->price) && $post->price > 0)
-													{!! \App\Helpers\Number::money($post->price) !!}
-												@elseif(is_numeric($post->price) && $post->price == 0)
-													{!! t('free_as_price') !!}
-												@else
-													{!! \App\Helpers\Number::money(' --') !!}
-												@endif
+									<div class="card-body d-flex flex-column p-3">
+										<div class="d-flex justify-content-between align-items-start mb-2">
+											<h6 class="card-title mb-0 fw-bold" style="font-size: 0.95rem; flex: 1; line-height: 1.3; transition: color 0.3s;">
+												<a href="{{ \App\Helpers\UrlGen::post($post) }}" class="text-decoration-none" style="color: black; transition: color 0.3s;" onmouseover="this.style.color='#006400';" onmouseout="this.style.color='black';">
+													{{ \Illuminate\Support\Str::limit($post->title, 40) }}
+												</a>
+											</h6>
+											<div class="text-end ms-2">
+												<div class="fw-bold" style="font-size: 1rem; color: black; transition: color 0.3s;" onmouseover="this.style.color='green';" onmouseout="this.style.color='black';">
+													@if (isset($post->category, $post->category->type))
+														@if (!in_array($post->category->type, ['not-salable']))
+															@if (is_numeric($post->price) && $post->price > 0)
+																{!! \App\Helpers\Number::money($post->price) !!}
+															@elseif(is_numeric($post->price) && $post->price == 0)
+																{!! t('free_as_price') !!}
+															@else
+																{!! \App\Helpers\Number::money(' --') !!}
+															@endif
+														@endif
+													@else
+														{{ '--' }}
+													@endif
+												</div>
+											</div>
+										</div>
+										
+										<div class="mb-1 small text-muted" style="transition: color 0.3s;" onmouseover="this.style.color='green';" onmouseout="this.style.color='';">
+											@if (isset($post->category->parent) && !empty($post->category->parent))
+												<a href="{!! \App\Helpers\UrlGen::category($post->category->parent) !!}" class="text-decoration-none" style="transition: color 0.3s;" onmouseover="this.style.color='green';" onmouseout="this.style.color='';">
+													{{ $post->category->parent->name }}
+												</a> &raquo;
 											@endif
-										@else
-											{{ '--' }}
+											<a href="{!! \App\Helpers\UrlGen::category($post->category) !!}" class="text-decoration-none" style="transition: color 0.3s;" onmouseover="this.style.color='green';" onmouseout="this.style.color='';">
+												{{ $post->category->name }}
+											</a>
+										</div>
+										
+										<div class="mb-1 small text-muted" style="transition: color 0.3s;" onmouseover="this.style.color='green';" onmouseout="this.style.color='';">
+											<i class="far fa-clock me-1"></i>
+											@if (!config('settings.listing.hide_dates'))
+												{!! $post->created_at_formatted !!}
+											@endif
+										</div>
+										
+										<div class="small text-muted" style="transition: color 0.3s;" onmouseover="this.style.color='green';" onmouseout="this.style.color='';">
+											<i class="fas fa-map-marker-alt me-1"></i>
+											<a href="{!! \App\Helpers\UrlGen::city($post->city) !!}" class="text-decoration-none" style="transition: color 0.3s;" onmouseover="this.style.color='green';" onmouseout="this.style.color='';">
+												{{ $post->city->name }}
+											</a>
+											{{ (isset($post->distance)) ? '- ' . round($post->distance, 2) . getDistanceUnit() : '' }}
+										</div>
+										
+										@if (config('plugins.reviews.installed'))
+											@if (view()->exists('reviews::ratings-list'))
+												<div class="mt-2">
+													@include('reviews::ratings-list')
+												</div>
+											@endif
 										@endif
-									</h4>&nbsp;
-									@if (isset($post->latestPayment, $post->latestPayment->package) && !empty($post->latestPayment->package))
-										@if ($post->latestPayment->package->has_badge == 1)
-											<a class="btn btn-danger btn-sm make-favorite">
-												<i class="fa fa-certificate"></i>
-												<span> {{ $post->latestPayment->package->short_name }} </span>
-											</a>&nbsp;
-										@endif
-									@endif
-									@if (isset($post->savedByLoggedUser) && $post->savedByLoggedUser->count() > 0)
-										<a class="btn btn-success btn-sm make-favorite" id="{{ $post->id }}">
-											<i class="fa fa-heart"></i><span> {{ t('Saved') }} </span>
-										</a>
-									@else
-										<a class="btn btn-default btn-sm make-favorite" id="{{ $post->id }}">
-											<i class="fa fa-heart"></i><span> {{ t('Save') }} </span>
-										</a>
-									@endif
+									</div>
 								</div>
 							</div>
-						</div>
-					@endforeach
+						@endforeach
+					</div>
 			
-					<div style="clear: both"></div>
+					<div class="clearfix"></div>
 					
 					@if (isset($latestOptions) && isset($latestOptions['show_view_more_btn']) && $latestOptions['show_view_more_btn'] == '1')
-						<div class="mb20 text-center">
-							<a href="{{ \App\Helpers\UrlGen::search() }}" class="btn btn-default mt10">
-								<i class="fa fa-arrow-circle-right"></i> {{ t('View more') }}
+						<div class="mb-4 text-center mt-4">
+							<a href="{{ \App\Helpers\UrlGen::search() }}" class="btn btn-primary px-4" style="transition: color 0.3s;" onmouseover="this.style.color='green';" onmouseout="this.style.color='';">
+								<i class="fa fa-arrow-circle-right me-2"></i> {{ t('View more') }}
 							</a>
 						</div>
 					@endif
