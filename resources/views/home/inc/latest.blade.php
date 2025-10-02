@@ -147,7 +147,7 @@ if (isset($latestOptions, $latestOptions['hide_on_mobile']) and $latestOptions['
 						</div>
 					@endif
 				</div>
-				
+				@include('home.inc.automobiles');
 			</div>
 		</div>
 	</div>
