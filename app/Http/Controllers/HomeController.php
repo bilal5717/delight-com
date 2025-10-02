@@ -141,6 +141,7 @@ class HomeController extends FrontController
 
     public function showMainPage($data)
     {
+    
         return view('home.index', $data);
     }
 
